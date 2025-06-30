@@ -30,5 +30,5 @@ This project applies sentiment analysis techniques on textual data using both Tr
 Make sure to install the required libraries:
 
 ```bash
-pip install transformers datasets scikit-learn matplotlib seaborn torch
+pip install transformers datasets scikit-learn matplotlib seaborn torch lime
 
