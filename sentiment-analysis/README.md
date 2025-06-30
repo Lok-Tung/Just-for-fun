@@ -31,4 +31,29 @@ Make sure to install the required libraries:
 
 ```bash
 pip install transformers datasets scikit-learn matplotlib seaborn torch lime
+```
 
+---
+
+## 🚀 How to Run
+
+1. Clone the repository or download the notebook.
+2. Open `Sentiment_Analysis.ipynb` in Jupyter or VSCode.
+3. Run all cells in order, or section-by-section depending on the model you're testing.
+
+---
+
+## 📈 Evaluation Metrics
+
+The notebook evaluates model performance using:
+- Accuracy
+- Precision / Recall / F1-score
+- Confusion matrix
+- Confidence analysis of predictions
+
+---
+
+## 🧠 Models Used
+
+- 🤖 **DistilBERT** from Hugging Face Transformers
+- 🧠 **LSTM** implemented with Keras
