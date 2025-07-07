@@ -17,7 +17,7 @@ This project fine-tunes the [BLIP (Bootstrapped Language Image Pretraining)](htt
 - **Samples:** 1,345 Amazon product images with titles and descriptions.
 - **Fields:**
   - `image`: Product image
-  - `title`: Product title
+  - `Product Name`: Product title
   - `description`: Marketing-style product description
 
 ---
@@ -47,7 +47,7 @@ We evaluate the generated descriptions using **[BERTScore](https://arxiv.org/abs
 
 | Metric      | Description                            | Result (Test Set) |
 |-------------|----------------------------------------|-------------------|
-| **BERTScore F1** | Measures meaning-level similarity | **0.8542**        |
+| **BERTScore F1** | Measures meaning-level similarity | **0.8662**        |
 
 > ⚠️ BLEU and ROUGE were not used, as they penalize valid rewordings and are less suited to generative tasks like product description generation.
 
