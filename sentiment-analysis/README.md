@@ -1,59 +1,73 @@
-# Sentiment Analysis Using Transformers and LSTM
+# 📊 Yelp Review Sentiment Analysis with LSTM & DistilBERT
 
-This project applies sentiment analysis techniques on textual data using both Transformer-based models (e.g., DistilBERT) and traditional LSTM networks. The goal is to classify text into sentiment categories such as **positive**, **neutral**, and **negative**.
+![Model Comparison](https://i.imgur.com/8y3LQ5a.png)
 
----
+## 📌 Overview
+This project implements and compares two deep learning approaches for sentiment classification on Yelp restaurant reviews:
 
-## 📚 Project Structure
+- **Bidirectional LSTM** — A custom recurrent neural network
+- **DistilBERT** — A distilled version of BERT optimized for speed and efficiency
 
-- `Sentiment_Analysis.ipynb`: Main Jupyter Notebook containing:
-  - Data loading and preprocessing
-  - Tokenization and vectorization
-  - Model training with DistilBERT
-  - Comparison with LSTM-based architecture
-  - Evaluation and performance metrics
+The goal is to classify reviews into three sentiment categories:
+- 😠 **Bad** (1–2 stars)
+- 😐 **Neutral** (3 stars)
+- 😃 **Good** (4–5 stars)
 
----
-
-## 🔍 Features
-
-- Preprocessing of textual data with Hugging Face Tokenizers
-- Fine-tuning of pre-trained DistilBERT model
-- LSTM model for baseline comparison
-- Accuracy, classification report, and confidence score evaluation
-- Visualizations of prediction confidence and distribution
+Key features include class imbalance handling, model interpretability with LIME, and a detailed performance comparison.
 
 ---
 
-## 📦 Dependencies
-
-Make sure to install the required libraries:
-
-```bash
-pip install transformers datasets scikit-learn matplotlib seaborn torch lime
-```
-
----
-
-## 🚀 How to Run
-
-1. Clone the repository or download the notebook.
-2. Open `Sentiment_Analysis.ipynb` in Jupyter or VSCode.
-3. Run all cells in order, or section-by-section depending on the model you're testing.
+## ✨ Key Features
+- ✅ Dual-model architecture for performance benchmarking  
+- ⚖️ Class weighting for imbalanced sentiment distribution  
+- 🔍 LIME interpretability to explain model predictions  
+- 📏 Review length-based performance analysis  
+- 📊 Confidence metrics for prediction reliability  
+- 📈 Comprehensive training and evaluation visualizations  
 
 ---
 
-## 📈 Evaluation Metrics
+## 📊 Dataset
+The system uses the **Yelp Restaurant Reviews** dataset containing:
 
-The notebook evaluates model performance using:
-- Accuracy
-- Precision / Recall / F1-score
-- Confusion matrix
-- Confidence analysis of predictions
+- 19,000+ reviews with star ratings (1–5)
+- Cleaned & preprocessed text (punctuation/symbols removed)
+
+**Class distribution after preprocessing:**
+
+| Sentiment | Percentage | Count   |
+|-----------|------------|---------|
+| Good      | 77.1%      | 15,330  |
+| Neutral   | 10.4%      | 2,069   |
+| Bad       | 12.6%      | 2,497   |
 
 ---
 
-## 🧠 Models Used
+## 📈 Results
+**🔁 Performance Comparison**
 
-- 🤖 **DistilBERT** from Hugging Face Transformers
-- 🧠 **LSTM** implemented with Keras
+| Model	     | Accuracy | F1-Score	| Training Time |	Memory Usage |
+|------------|----------|-----------|---------------|--------------|
+| LSTM       | 78%	    | 80%     	| Fast        	| Low          |
+| DistilBERT | 87%      |	87%	      | Slow	        | High         |
+
+
+**🎯 Per-Class Accuracy**
+
+| Sentiment |	LSTM  | DistilBERT |
+|-----------|-------|------------|
+| Bad	      | 76.8% |	71.7%      |
+| Neutral   |	32.6%	| 46.9%      |
+| Good	    | 84.6%	| 94.8%      |
+
+**📏 Review Length Analysis**
+
+| Review Length   	| LSTM  | DistilBERT |
+|-------------------|-------|------------|
+| Short (≤20 words) | 90.4% |	93.5%      |
+| Long (>20 words)  |	77.4%	| 86.5%      |
+
+**🔍 Model Interpretability**
+---
+
+
