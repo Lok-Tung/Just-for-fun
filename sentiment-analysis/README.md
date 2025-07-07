@@ -1,6 +1,5 @@
 # 📊 Yelp Review Sentiment Analysis with LSTM & DistilBERT
 
-![Model Comparison](https://i.imgur.com/8y3LQ5a.png)
 
 ## 📌 Overview
 This project implements and compares two deep learning approaches for sentiment classification on Yelp restaurant reviews:
@@ -70,4 +69,12 @@ The system uses the **Yelp Restaurant Reviews** dataset containing:
 **🔍 Model Interpretability**
 ---
 
+## 🔍 Model Interpretability
 
+**LSTM Architecture**
+
+<details> <summary>View Model Diagram & Code</summary> <!-- Insert your LSTM architecture diagram and code block here --> </details>
+
+**DistilBERT Architecture**
+
+<details> <summary>View Model Diagram & Code</summary> <!-- Insert your DistilBERT architecture diagram and code block here --> </details>
