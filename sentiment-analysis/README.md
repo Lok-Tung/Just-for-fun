@@ -70,6 +70,8 @@ The system uses the **Yelp Restaurant Reviews** dataset containing:
 
 LIME (Local Interpretable Model-agnostic Explanations) helps visualize which words influenced the prediction.
 
+> Example Review: *"I had to wait forever for my order. The service was painfully slow and completely unacceptable."*
+
 LIME Explanation for LSTM Model
 
 <img src="visualizations/lstm_explanation.png" width="600"/>
@@ -78,5 +80,5 @@ LIME Explanation for DistilBERT Model
 
 <img src="visualizations/bert_explanation.png" width="600"/>
 
-> Example Review: *"I had to wait forever for my order. The service was painfully slow and completely unacceptable."*
+
 ---
