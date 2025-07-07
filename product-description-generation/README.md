@@ -55,11 +55,11 @@ We evaluate the generated descriptions using **[BERTScore](https://arxiv.org/abs
 
 ## 🖼️ Sample Output
 
-<img src="assets/sample_display.png" width="600"/>
+<img src="assets/sample_image.png" width="600"/>
 
-- **Ground Truth:** Lightweight running shoes with breathable mesh upper and cushioned sole.
-- **Generated:** Mesh athletic shoes ideal for sports or daily wear.
-- **BERTScore F1:** 0.8721
+- **Ground Truth:** Enchant your child with the Cate and Levi 12" Handmade Princess Hand Puppet! Crafted from premium reclaimed wool, each puppet is unique. Colors vary, adding to the charm. Perfect for imaginative play & storytelling. A delightful hand puppet for kids of all ages.
+- **Generated:** adorable 3 - piece knitted friends doll set! perfect for imaginative play. soft, huggable, and a collectible addition to any doll collection. shop now!
+- **BERTScore F1:** 0.8635
 
 ---
 
