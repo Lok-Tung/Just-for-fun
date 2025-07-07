@@ -68,17 +68,3 @@ The system uses the **Yelp Restaurant Reviews** dataset containing:
 
 **🔍 Model Interpretability**
 ---
-
-## 🧠 Model Architectures
-
-**LSTM Architecture**
-
-```
-<details> <summary>View Model Diagram & Code</summary> <!-- Insert your LSTM architecture diagram and code block here --> </details>
-```
-
-**DistilBERT Architecture**
-
-```
-<details> <summary>View Model Diagram & Code</summary> <!-- Insert your DistilBERT architecture diagram and code block here --> </details>
-```
