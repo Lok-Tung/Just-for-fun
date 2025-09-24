@@ -32,10 +32,3 @@ This project simulates a **consumer loan portfolio** and applies **risk analytic
 - Visualized how borrower attributes (FICO, DTI, income) drive default risk.  
 
 ---
-
-## 🔍 Example Visualization  
-
-![Loan Distribution by Grade](images/loan_distribution.png)  
-*Loan volume distribution across risk grades.*  
-
----
