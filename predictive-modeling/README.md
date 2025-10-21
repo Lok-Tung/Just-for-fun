@@ -59,9 +59,4 @@ Performance was assessed on AUC (Area Under ROC Curve):
 
 ---
 
-## 📊 Visualization Examples
-
-**SHAP Summary Plot (Model Explainability):**
-```python
-shap.summary_plot(shap_values, X_test)
 
