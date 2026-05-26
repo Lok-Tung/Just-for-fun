@@ -1,3 +1,4 @@
+
 # Insurance Asset-Liability Management (ALM) Dashboard
 
 ## Business Problem
@@ -51,4 +52,11 @@ To evolve this project toward enterprise-grade LDI (Liability-Driven Investment)
 ### Execution
 ```bash
 python alm_dashboard.py
+```
+## Dashboard Overview
+The ALM Dashboard provides a real-time visualization of key risk metrics and cash flow alignment.
+
+![ALM Dashboard Preview]<img width="1200" height="900" alt="newplot" src="https://github.com/user-attachments/assets/09b5ea5b-bb88-427d-bc89-5b710facdda7" />
+
+*Click the image above to view a detailed breakdown of the ALM simulation methodology.*
 
